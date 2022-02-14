@@ -22,6 +22,7 @@ function onFormInput (event) {
 function onFormSubmit (event) {
     event.preventDefault()
     event.currentTarget.reset()
+    console.log(JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)));
     localStorage.removeItem(LOCALSTORAGE_KEY)
 }
 
